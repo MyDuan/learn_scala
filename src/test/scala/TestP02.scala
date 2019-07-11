@@ -5,7 +5,7 @@ import org.scalatest._
 class TestP02 extends FlatSpec with Matchers {
   import P02._
 
-  "penultimate of P01" should "find the last but one element of a list" in {
+  "penultimate of P02" should "find the last but one element of a list" in {
     penultimate(List(1,2,3,4,5,6,7)) should be (6)
   }
 
