@@ -7,6 +7,7 @@ class TestP20 extends FlatSpec with Matchers {
 
   "removeAt of P20" should "Remove the Kth element from a list." in {
     removeAt(2, List('a, 'b, 'c, 'd)) should be (List('a, 'b, 'd),'c)
+    removeAtAnswer1(2, List('a, 'b, 'c, 'd)) should be (List('a, 'b, 'd),'c)
   }
 
   it should "throw NoSuchElementException if an empty list or minus n is gave" in {

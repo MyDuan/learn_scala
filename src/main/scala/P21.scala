@@ -8,4 +8,8 @@ object P21 {
       front ++ (e :: back)
     }
   }
+
+  def insertAtAnswer1[A](e: A, n: Int, ls: List[A]): List[A] = ls.splitAt(n) match {
+    case (pre, post) => pre ::: e :: post
+  }
 }
